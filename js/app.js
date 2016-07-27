@@ -16,7 +16,7 @@ $("input").keypress(function(e) {
 function getMovie () {
   var movie  = $('#movie').val();
   var newMovie = movie.replace(/\s+/g, '');
-  var requestUrl = 'https://www.omdbapi.com/?t=' + movie + '&y=&plot=short&r=json'
+  var requestUrl = 'https://www.omdbapi.com/?type=movie&t=' + movie + '&y=&plot=short&r=json'
 
   $.getJSON(requestUrl, function(data) {
     var poster     = data.Poster
@@ -27,6 +27,7 @@ function getMovie () {
     var plot       = data.Plot
     var imdbRating = data.imdbRating
     console.log(data);
+    console.log(requestUrl);
     if (imdbRating < 6 ) {
       ratingLabel = 'alert'
       ratingIcon = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>'
