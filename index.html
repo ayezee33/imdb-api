@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+          <h1>Search for a movie</h1>
+          <p class="lead">Type in a movie and see what information we have about it.</p>
+            <div class="input-group">
+              <input id="movie" class="input-group-field" type="text">
+              <div class="input-group-button">
+                <input id ="movieSubmit" type="submit" class="button alert" value="Search">
+              </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+        <div id="output"></div>
+      </div>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
