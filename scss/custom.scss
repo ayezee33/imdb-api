@@ -1,4 +1,5 @@
 header {
+  position: relative;
   background: #03A9F4;
   padding: 5rem 0 7rem 0;
   color: #FFFFFF;
@@ -13,5 +14,15 @@ header {
   p {
     margin-top: .54rem;
     padding: 0;
+  }
+  i {
+    margin-left: .5rem;
+  }
+}
+.author-credit {
+  position: absolute;
+  bottom: 0;
+  a {
+    color: #FFFFFF;
   }
 }
