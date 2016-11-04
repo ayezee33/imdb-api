@@ -20,9 +20,10 @@ header {
   }
 }
 .author-credit {
-  position: absolute;
-  bottom: 0;
   a {
     color: #FFFFFF;
+    &:hover {
+      color: #fff;
+    }
   }
 }
