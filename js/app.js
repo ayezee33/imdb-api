@@ -16,7 +16,7 @@ $("input").keypress(function(e) {
 function getData () {
   var movie  = $('#movie').val();
   var newMovie = movie.replace(/\s+/g, '');
-  var requestUrl = 'https://www.omdbapi.com/?type=movie&t=' + movie + '&y=&plot=short&r=json&tomatoes=true'
+  var requestUrl = 'https://www.omdbapi.com/?type=movie&s=' + movie + '&y=&plot=short&r=json&tomatoes=true'
 
   $.getJSON(requestUrl, function(data) {
     var poster       = data.Poster
